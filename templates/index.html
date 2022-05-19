@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <h3 class="text-center p-3"><font size="40" weight="bold">Developer Weekly</font></h3>
+            <form method="post" class="card">
+                <div class="card-body">
+                    {% include "notify.html" %}
+                    <div class="mb3">
+                        <label for="website">Website URL</label>
+                        <br><br>
+                        <select class="form-control">
+                            <option selected>Select URL</option>
+                            <option value="1">https://www.pythonweekly.com/</option>
+                            <option value="2">https://www.baeldung.com/java-weekly-334</option>
+                            <option value="3">https://aiweekly.co/</option>
+                            <option value="4">https://web-design-weekly.com/</option>
+                            <option value="5">https://androidweekly.net/</option>
+                            <option value="6">https://cpp.libhunt.com/newsletter</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <br>
+                        <label for="website">Website Title</label>
+                        <br>
+                        <br>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select Title</option>
+                            <option value="1">python weekly</option>
+                            <option value="2">java-weekly-334</option>
+                            <option value="3">ai weekly</option>
+                            <option value="4">Web Design Weekly</option>
+                            <option value="5">Android Weekly</option>
+                            <option value="6">C++ weekly</option>
+                          </select>
+                    </div>
+                    <div>
+                        <center><label><font color="blue" font face="bold" font size="30">Website Category</font></label></center>
+                        <br>
+                            <center><select>
+                                name="category" id="category" class="fprm-select">
+                                <option>select Category</option>
+                                <option>Paython</option>
+                                <option>java</option>
+                                <option>AI</option>
+                                <option>Web Design</option>
+                                <option>Android</option>
+                                <option>C++</option>
+                            </select></center>
+                        
+                    </div>
+                    <br>
+                    <div>
+                        <button>Save and continue</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</container>
+{% endblock %}
+
